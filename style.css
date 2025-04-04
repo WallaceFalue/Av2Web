@@ -1,0 +1,33 @@
+/* nav {
+    background-color: rgb(31, 30, 30);
+    padding: 2em 4em;
+    margin-top: -2em;
+    z-index: 1000;
+    position: fixed;
+} */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Cor de fundo para o menu */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+    padding: 10px 0; /* Espaçamento interno */
+}
+nav h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+nav button {
+    padding: 15px 20px;
+    border-radius: 1em;
+    margin-left: 6em;
+}
+
+p {
+    font-size: 24em;
+}
