@@ -154,4 +154,19 @@ nav a.active {
     font-weight: bold;
 }
 
+.imagensHardwareLink {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
 
+.imagensLink {
+    height: 30em;
+    width: 24em;
+    transition: transform 0.3s ease;
+}
+
+.imagensLink:hover {
+    transform: scale(1.1);
+}
