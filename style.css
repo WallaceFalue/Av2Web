@@ -70,6 +70,18 @@ nav a.active {
   margin-top: 11em;
 }
 
+.tituloPromocoes {
+    display: flex;
+    background-color: #444;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: white;
+    padding: 1em;
+    border-radius: 0.1em;
+    justify-content: center;
+    align-items: center;
+}
+
 .sobreNos {
   text-align: center;
   font-size: 3em;
@@ -78,6 +90,7 @@ nav a.active {
 .caixaContainer {
     display: flex;
     gap: 20px; 
+    flex-wrap: wrap;
     justify-content: space-between; 
     padding: 20px;
 }
@@ -129,9 +142,8 @@ nav a.active {
     color: #999;
 }
 
-.precoAtual {
+.precoNovo {
     font-size: 18px;
-    color: #a22c29; 
     font-weight: bold;
 }
 
@@ -139,3 +151,4 @@ nav a.active {
     font-size: 12px;
     color: #666;
 }
+
