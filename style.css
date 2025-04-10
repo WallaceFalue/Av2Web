@@ -1,61 +1,141 @@
-main {
-    padding: 0;
-    padding-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main p, li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+main {
+  padding: 0;
+  padding-top: 60px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+main p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
 
 nav {
     background-color: rgb(31, 30, 30);
-    padding: 0.5em 2em;
-    margin-top: -2em;
+    padding: 1em 2em;
     z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5em;
+    margin-bottom: 0.5em; 
+    transition: all 0.3s ease; 
+}
+
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em; 
 }
 
 nav a {
-    padding: 15px 20px;
-    border-radius: 1em;
-    margin-left: 6em;
     text-decoration: none;
     color: white;
     font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #444; 
+    color: #00ff00; 
+}
+
+nav a.active {
+    color: #00ff00; 
+    font-weight: bold;
 }
 
 .espacador {
-    margin-top: 11em;
+  margin-top: 11em;
 }
 
 .sobreNos {
-    text-align: center;
-    font-size: 3em;
+  text-align: center;
+  font-size: 3em;
 }
 
-.cixaContainer {
+.caixaContainer {
     display: flex;
-    align-items: center;
+    gap: 20px; 
+    justify-content: space-between; 
+    padding: 20px;
 }
 
-.caixona {
-    padding: 4em 6em;
-    border-radius: 1em;
-    background-color: black;
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(20% - 20px); 
+    transition: transform 0.3s ease;
 }
 
-.caixa {
-    padding: 3em 6em;
-    background-color: white;
-    margin-top: 0%;
+.produto:hover {
+    transform: scale(1.05); 
+}
+
+.desconto {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.imagemProduto {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.produto h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.precoAntigo {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.precoAtual {
+    font-size: 18px;
+    color: #a22c29; 
+    font-weight: bold;
+}
+
+.parcelamento {
+    font-size: 12px;
+    color: #666;
 }
