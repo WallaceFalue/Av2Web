@@ -31,6 +31,36 @@ li {
   font-size: 1.5em;
 }
 
+main ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.PCatencao {
+  display: flex;
+  flex-direction: column;
+  border: 5px dashed orangered;
+  color: orangered;
+  margin-left: 6em;
+  width: 90%;
+}
+
+.PCatencao h1 {
+  margin-left: 1em;
+}
+
+.PCatencao h2 {
+  margin-left: 2.5em;
+}
+
+.PCatencao li {
+  margin-left: 2.5em;
+}
+
+.PCatencao span {
+  font-size: 1.2em;
+}
+
 .letraMinuscula {
   font-size: 0.5em;
 }
@@ -187,14 +217,14 @@ nav a.active {
 
 .imagensHardwareLink {
   display: flex;
-  gap: 3em;
+  gap: 2em;
   justify-content: center;
   align-items: center;
 }
 
 .imagensLink {
   height: 28em;
-  width: 19em;
+  width: 24em;
   transition: transform 0.3s ease;
 }
 
@@ -246,6 +276,16 @@ footer {
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
+  border: 5px solid #333;
+}
+
+.PCtexto h3 {
+  text-align: center;
+}
+
+.PCtexto h4 {
+  color: #333;
+  text-align: right;
 }
 
 .PCcontainer p {
@@ -270,5 +310,5 @@ footer {
 
 .PCpecaImagem span {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
