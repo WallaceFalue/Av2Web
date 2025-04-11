@@ -21,53 +21,52 @@ li {
 }
 
 .letraMinuscula {
-    font-size: 0.5em;
+  font-size: 0.5em;
 }
 
 nav {
-    background-color: rgb(31, 30, 30);
-    padding: 1em 2em;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: left; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(31, 30, 30);
+  padding: 1em 2em;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2.5em;
-    margin-bottom: 0.5em; 
-    transition: all 0.3s ease; 
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  transition: all 0.3s ease;
 }
 
-
 nav .menu {
-    display: flex;
-    justify-content: center;
-    gap: 2em; 
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: all 0.3s ease; 
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #444; 
-    color: #00ff00; 
+  background-color: #444;
+  color: #00ff00;
 }
 
 nav a.active {
-    color: #00ff00; 
-    font-weight: bold;
+  color: #00ff00;
+  font-weight: bold;
 }
 
 .espacador {
@@ -75,15 +74,15 @@ nav a.active {
 }
 
 .tituloPromocoes {
-    display: flex;
-    background-color: #444;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
-    color: white;
-    padding: 1em;
-    border-radius: 0.1em;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #444;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  color: white;
+  padding: 1em;
+  border-radius: 0.1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .sobreNos {
@@ -92,99 +91,124 @@ nav a.active {
 }
 
 .caixaContainer {
-    display: flex;
-    gap: 20px; 
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .produto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: calc(20% - 20px); 
-    transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(20% - 20px);
+  transition: transform 0.3s ease;
 }
 
 .produto:hover {
-    transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
-.desconto, .parcelamento {
-    background-color: #333;
-    color: #fff !important;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 0;
-    text-transform: uppercase;
+.desconto,
+.parcelamento,
+.nomePC {
+  background-color: #333;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0;
+  text-transform: uppercase;
 }
 
 .descontoMega {
-    background-color: #333;
-    color: #38e20d !important;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 0;
-    text-transform: uppercase;
+  background-color: #333;
+  color: #38e20d !important;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0;
+  text-transform: uppercase;
 }
 
 .imagemProduto {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 .produto h3 {
-    font-size: 16px;
-    color: #333;
-    margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
 }
 
 .produto p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
 }
 
 .precoAntigo {
-    text-decoration: line-through;
-    color: #999;
+  text-decoration: line-through;
+  color: #999;
 }
 
 .precoNovo {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .imagensHardwareLink {
-    display: flex;
-    gap: 3em;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagensLink {
-    height: 30em;
-    width: 24em;
-    transition: transform 0.3s ease;
+  height: 30em;
+  width: 24em;
+  transition: transform 0.3s ease;
 }
 
 .imagensLink:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 footer {
-    margin-top: 2em;
-    padding: 4em 8em;
-    background-color: #333;
-    color: white;
-    left: 0;
+  margin-top: 2em;
+  padding: 4em 8em;
+  background-color: #333;
+  color: white;
+  left: 0;
 }
 
+.caixaContainerPC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+  gap: 2em;
+}
+
+.textoPC {
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 40%;
+  transition: transform 0.3s ease;
+}
+
+.imagemPC {
+    width: auto;
+    height: 24em;
+}
