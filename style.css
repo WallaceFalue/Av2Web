@@ -189,26 +189,65 @@ footer {
   left: 0;
 }
 
-.caixaContainerPC {
+.PCcontainer {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;  
-  gap: 2em;
+  align-items: center;
+  padding: 20px;
 }
 
-.textoPC {
-  justify-content: space-between;
+.PCcontainer  img {
+  display: flex;
+  align-content: center;
+  width: 32em;
+  height: 32em;
+}
+
+.PCtitulo {
+  display: flex;
+  width: 100%;
+  height: 2.5em;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+}
+
+.PCtexto {
+  display: flex;
+  width: 60%;
+  height: 32em ;
+  border: 1 #333;
   background-color: #fff;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 40%;
-  transition: transform 0.3s ease;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
 }
 
-.imagemPC {
-    width: auto;
-    height: 24em;
+.PCcontainer p {
+  font-size: 1em;
+  color: #333;
+}
+
+.PCcontainer h3 {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.PCpecaImagem {
+  display: flex;
+  align-items: center;
+}
+
+.PCpecaImagem img {
+  height: 3em;
+  width: 3em;
+}
+
+.PCpecaImagem span {
+  font-weight: bold;
+  font-size: 1.2em;
 }
