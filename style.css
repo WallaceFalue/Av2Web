@@ -9,6 +9,17 @@ main {
   padding-top: 60px;
 }
 
+.baner {
+  display: flex;
+  justify-content: center;
+}
+
+.baner img {
+  width: 90%;
+  height: 24em;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -22,6 +33,12 @@ li {
 
 .letraMinuscula {
   font-size: 0.5em;
+}
+
+.destaque {
+  margin-left: 0.8em;
+  color: orangered;
+  padding: 5px;
 }
 
 nav {
@@ -71,6 +88,10 @@ nav a.active {
 
 .espacador {
   margin-top: 8em;
+}
+
+.subTitulosEspacados {
+  padding: 1em;
 }
 
 .tituloPromocoes {
@@ -172,8 +193,8 @@ nav a.active {
 }
 
 .imagensLink {
-  height: 30em;
-  width: 24em;
+  height: 28em;
+  width: 19em;
   transition: transform 0.3s ease;
 }
 
