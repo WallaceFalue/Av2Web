@@ -281,11 +281,15 @@ footer {
 
 .PCtexto h3 {
   text-align: center;
+  background-color: #33333333;
+  font-weight: bolder;
+  font-size: 2em;
 }
 
 .PCtexto h4 {
   color: #333;
   text-align: right;
+  margin-right: 1em;
 }
 
 .PCcontainer p {
@@ -293,14 +297,10 @@ footer {
   color: #333;
 }
 
-.PCcontainer h3 {
-  font-weight: bolder;
-  font-size: 2em;
-}
-
 .PCpecaImagem {
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .PCpecaImagem img {
