@@ -312,3 +312,34 @@ footer {
   font-weight: bold;
   font-size: 1.1em;
 }
+
+.textosobre{
+  text-align: center;
+  line-height: 2em;
+  margin-left: 12em; 
+  border: 5px solid #fff;
+  border-radius: 10px;
+  /* arrumar isso depois */
+}
+
+.textosobre h1{
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+
+}
+
+.textosobre p{
+  font-size: 1.5em;
+}
+
+.caixasobre{
+  width: 80%;
+  background-color: #333;
+  color: white;
+  border: 5px solid #fff;
+}
+
+.caixasobre1{
+  flex-direction: column;
+}
