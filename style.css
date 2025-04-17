@@ -317,7 +317,6 @@ footer {
   text-align: center;
   line-height: 2em;
   margin-left: 12em; 
-  /* arrumar isso depois */
 }
 
 .textosobre h1{
@@ -342,4 +341,25 @@ footer {
 .caixasobre1{
   flex-direction: column;
   padding: 20px;
+}
+
+.monteSeuPCContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.monteseuPCimgGalria {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.monteSuePCpecas {
+  width: 5em;
+  height: 5em;
+  transition: transform 0.5s ease;
+}
+
+.monteSuePCpecas:hover {
+  transform: scale(1.2);
 }
