@@ -348,18 +348,45 @@ footer {
   flex-direction: column;
 }
 
-.monteseuPCimgGalria {
+.monteseuPCimgGaleria {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 2em;
+  justify-content: center;
+  align-items: center;
 }
 
-.monteSuePCpecas {
+.monteSuePCimg {
   width: 5em;
   height: 5em;
   transition: transform 0.5s ease;
+  border: 5px solid green;
+  border-radius: 1em;
 }
 
 .monteSuePCpecas:hover {
   transform: scale(1.2);
+}
+
+.monteSuePCpecas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(15% - 20px);
+}
+
+.monteSuePCpecas h3 {
+  font-size: 1em;
+}
+
+.TituloMonteseuPC {
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
 }
