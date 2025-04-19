@@ -343,11 +343,6 @@ footer {
   padding: 20px;
 }
 
-.monteSeuPCContainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .monteseuPCimgContainer {
   display: flex;
   flex-wrap: wrap;
