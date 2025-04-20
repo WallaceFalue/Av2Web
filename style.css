@@ -402,3 +402,41 @@ footer {
   color: white;
   text-align: center;
 }
+
+.monteSeuPCCompletoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.monteSeuPCCompleto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.monteSeuPCCompleto img {
+  width: 6em;
+  height: 6em;
+  border-radius: 8px;
+}
+
+.monteSeuPCCompleto h3 {
+  font-size: 1.2em;
+}
+
+.monteSeuPCCompleto span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #00ff00;
+  text-align: right;
+}
