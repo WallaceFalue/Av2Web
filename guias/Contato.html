@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="shortcut icon" href="../imagens/alien.avif" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Contato</title>
 </head>
 <body>
-    
+    <nav>
+        <h1>
+          <a href="index.html"
+            >MegaByte<span class="letraMinuscula">.Shopping</span></a
+          >
+        </h1>
+        <div class="menu">
+          <a href="promocoes.html">Promoções</a>
+          <a href="PC Gamer.html">PC Gamer</a>
+          <a href="upgradeEperifericos.html">Kit Upgrade e periféricos</a>
+          <a href="monteSeuPC.html">Monte seu PC</a>
+          <a href="novidades.html">Novidades</a>
+          <a href="sobreNos.html">Sobre Nós</a>
+          <a href="Contato.html">Contato</a>
+        </div>
+      </nav>
+
+      <div class="espacador"></div>
+
+      <main class="contato">
+        <form id="emailForm">
+            <label>Olá! Caso você queira entrar em contato conosco, por favor, nos mande um email</label>
+            <input placeholder="Digite seu email" id="emailInput">
+            <textarea placeholder="Digite sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="resultMessage"></p>
+      </main>
+      
+      <script>
+        const emailInput = document.querySelector("#emailInput")
+        const resultMessage = document.querySelector("#resultMessage")
+        const emailForm = document.querySelector("#emailForm")
+
+        emailForm.addEventListener("submit", function(event){
+          event.preventDefault();
+
+          const email = emailInput.value
+
+          const isValid = validateEmail(email);
+
+          if(isValid) {
+            resultMessage.textContent = "email valido";
+            resultMessage.style.color = "green";
+          } else{
+            resultMessage.textContent = "email invalido";
+            resultMessage.style.color = "red";
+          }
+        });
+        
+        const validateEmail = (email) => {
+          const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+          return regex.test(email);
+        }
+      </script>
 </body>
 </html>
