@@ -437,7 +437,7 @@
           ids.forEach(id => {
             const span = document.querySelector(`#${id} span`);
             if (span) {
-              const texto = span.innerText.replace(".", "").replace(",", ".");
+              const texto = span.innerText.replace(".").replace(",");
               const valor = parseFloat(texto);
               if (!isNaN(valor)) total += valor;
             }
