@@ -91,7 +91,7 @@
             class="monteSuePCimg"
           />
           <h3>Cooler Master ML360L ARGB</h3>
-          <span>750,00</span>
+          <span>350,00</span>
         </div>
         <div class="monteSuePCpecas" onclick="apertadoC(this)">
           <img
@@ -413,7 +413,9 @@
           botaoClicadoG.style.backgroundColor = "#00ff00";
         }
       </script>
-      <h1></h1>
+
+      <h1 class="TituloMonteseuPC">Seu Computador</h1>
+
       <div class="monteSeuPCCompletoContainer">
         <div class="monteSeuPCCompleto" id="mensagemP"></div>
         <div class="monteSeuPCCompleto" id="mensagemC"></div>
@@ -423,17 +425,32 @@
         <div class="monteSeuPCCompleto" id="mensagemA"></div>
         <div class="monteSeuPCCompleto" id="mensagemF"></div>
         <div class="monteSeuPCCompleto" id="mensagemG"></div>
-        <div class="monteSeuPCCompleto"><h3>Total:</h3></div>
+        <div class="monteSeuPCCompleto" id="precoTotal"><h3>Total:</h3></div>
       </div>
 
-      <script>function somador(soma) {
-       precoTotal =+ querySelectorAll('span').innerHTML;
-        
-      }
-
+      <script>
+        const ids = ["mensagemP", "mensagemC", "mensagemPM", "mensagemM", "mensagemPV", "mensagemA", "mensagemF", "mensagemG"];
       
-        </script>
-
+        function calcularTotal() {
+          let total = 0;
+      
+          ids.forEach(id => {
+            const span = document.querySelector(`#${id} span`);
+            if (span) {
+              const texto = span.innerText.replace(".", "").replace(",", ".");
+              const valor = parseFloat(texto);
+              if (!isNaN(valor)) total += valor;
+            }
+          });
+      
+          document.getElementById("precoTotal").innerHTML = `<h3>Total: R$ ${total.toFixed(2).replace(".", ",")}</h3>`;
+        }
+    
+        ids.forEach(id => {
+          const el = document.getElementById(id);
+          new MutationObserver(calcularTotal).observe(el, { childList: true, subtree: true });
+        });
+      </script>
     </main>
   </body>
 </html>
