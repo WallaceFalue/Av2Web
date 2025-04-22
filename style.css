@@ -465,3 +465,15 @@ footer {
   border-radius: 10px;
 }
 
+.perifericos{
+  display: flex;
+  background-color: #444;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  color: white;
+  padding: 1em;
+  border-radius: 0.1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
