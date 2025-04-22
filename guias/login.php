@@ -15,7 +15,7 @@
             echo '
             <script>
                 alert("Login bem-sucedido!");
-                window.location.href = "index.html";
+                window.location.href = "../index.html";
             </script>';
         } else {
             echo '
