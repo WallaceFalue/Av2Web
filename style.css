@@ -515,54 +515,104 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.baner img {
-  width: 100%;
-  max-height: 60vh;
-  object-fit: cover;
-}
-
 @media (max-width: 768px) {
-  nav {
-    text-align: center;
-    padding: 1em;
+  nav h1 {
+    font-size: 2em;
   }
 
   nav .menu {
-    display: flex;
     flex-direction: column;
-    gap: 0.8em;
+    gap: 1em;
   }
 
-  .PCatencao {
-    margin-left: 1em;
-    width: 95%;
+  .baner img {
+    width: 100%;
+    height: auto;
   }
 
-  main p,
-  li {
-    font-size: 1.1em;
+  .caixaContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produto {
+    width: 100%;
+  }
+
+  .PCcontainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .PCtexto {
+    width: 100%;
+    height: auto;
+  }
+
+  .monteSuePCpecas {
+    width: 100%;
+    height: auto;
+  }
+
+  .monteSeuPCCompleto {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .caixaLoginContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #form {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .imagemLogin {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .PCatencao h1,
-  .PCatencao h2,
-  .PCatencao li {
-    margin-left: 1em;
+  nav h1 {
+    font-size: 1.5em;
   }
 
-  .PCatencao {
+  .tituloPromocoes {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+
+  .sobreNos {
+    font-size: 2em;
+  }
+
+  .textosobre h1 {
+    font-size: 1.5em;
+  }
+
+  .textosobre p {
+    font-size: 1em;
+  }
+
+  .caixasobre {
+    width: 100%;
+  }
+
+  .monteSuePCpecas h3 {
+    font-size: 1em;
+  }
+
+  .monteSuePCpecas span {
     font-size: 0.9em;
   }
-}
 
-@media (max-width: 768px) {
-  .spacador {
-    height: 100px; 
+  .monteSeuPCCompleto h3 {
+    font-size: 1em;
+  }
+
+  .monteSeuPCCompleto span {
+    font-size: 0.9em;
   }
 }
