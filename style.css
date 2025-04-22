@@ -448,23 +448,25 @@ footer {
   flex-direction: column;
 }
 
+.caixaLoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  padding: 20px; 
+}
+
 #form {
   background-color: white;
-  width: 25%;
-  margin: 120px auto;
-  padding: 50px;
-  box-shadow: 10px 10px 5px rgb(82, 11, 77);
-  border-radius: 6%;
-}
-
-#btn {
-  color: white;
-  background: rgb(130, 29, 224);
-  padding: 10px;
-  font-size: large;
+  padding: 40px;
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-right: 40px;
 }
 
+<<<<<<< HEAD
 .perifericos{
   display: flex;
   background-color: #444;
@@ -476,4 +478,155 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+=======
+#form h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#form h2 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#form input[type="text"],
+#form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#form input[type="submit"] {
+  background-color: #218e55;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form input[type="submit"]:hover {
+  background-color: #1b7546;
+}
+
+.imagemLogin {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 2em;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .baner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caixaContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produto {
+    width: 100%;
+  }
+
+  .PCcontainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .PCtexto {
+    width: 100%;
+    height: auto;
+  }
+
+  .monteSuePCpecas {
+    width: 100%;
+    height: auto;
+  }
+
+  .monteSeuPCCompleto {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .caixaLoginContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #form {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .imagemLogin {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 1.5em;
+  }
+
+  .tituloPromocoes {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+
+  .sobreNos {
+    font-size: 2em;
+  }
+
+  .textosobre h1 {
+    font-size: 1.5em;
+  }
+
+  .textosobre p {
+    font-size: 1em;
+  }
+
+  .caixasobre {
+    width: 100%;
+  }
+
+  .monteSuePCpecas h3 {
+    font-size: 1em;
+  }
+
+  .monteSuePCpecas span {
+    font-size: 0.9em;
+  }
+
+  .monteSeuPCCompleto h3 {
+    font-size: 1em;
+  }
+
+  .monteSeuPCCompleto span {
+    font-size: 0.9em;
+  }
+>>>>>>> 1b7d5cd5d4d33dd2ae3f022ac0d340bfb164b956
 }
