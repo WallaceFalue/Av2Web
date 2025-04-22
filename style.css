@@ -466,7 +466,6 @@ footer {
   margin-right: 40px;
 }
 
-<<<<<<< HEAD
 .perifericos{
   display: flex;
   background-color: #444;
@@ -478,7 +477,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-=======
+}
+
 #form h1 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -628,5 +628,16 @@ footer {
   .monteSeuPCCompleto span {
     font-size: 0.9em;
   }
->>>>>>> 1b7d5cd5d4d33dd2ae3f022ac0d340bfb164b956
-}
+
+  .perifericos {
+    display: flex;
+    background-color: #444;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    color: white;
+    padding: 1em;
+    border-radius: 0.1em;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }}
