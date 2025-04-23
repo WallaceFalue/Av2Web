@@ -441,12 +441,6 @@ footer {
   text-align: right;
 }
 
-.contato{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .caixaLoginContainer {
   display: flex;

@@ -27,17 +27,27 @@
       </nav>
 
       <div class="espacador"></div>
-
-      <main class="contato">
-        <form id="emailForm">
-            <label>Olá! Caso você queira entrar em contato conosco, por favor, nos mande um email</label>
-            <input placeholder="Digite seu email" id="emailInput">
-            <textarea placeholder="Digite sua mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="resultMessage"></p>
-      </main>
       
+      
+      <div class="caixaLoginContainer">   
+        <div id="form">
+            <h1>Seja bem vindo!</h1><br>
+            <h2>Caso tenha alguma duvida ou reclamação, nos mande um email</h2>
+            <form name="form" id="emailForm" class="caixaLogin">
+                <label>Email</label>
+                <input  placeholder="Digite seu nome" id="emailInput"><br><br>
+                <label>Email</label>
+                <input  placeholder="Digite seu email" id="emailInput"><br><br>
+                <label>Motivo da duvida ou reclamação</label>
+                <input  placeholder="Digite aqui" id="emailInput"><br><br>
+                <label>mensagem</label>
+                <textarea  placeholder="Digite sua mensagem" id="pass" name="pass"></textarea>
+                <input type="submit" id="btn">
+            </form>
+            <p id="resultMessage"></p>
+        </div>
+    <img src="../imagens/ladoVermerlho.jpg" alt="propaganda" class="imagemLogin">
+
       <script>
         const emailInput = document.querySelector("#emailInput")
         const resultMessage = document.querySelector("#resultMessage")
