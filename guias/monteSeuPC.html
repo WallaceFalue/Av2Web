@@ -438,20 +438,23 @@
           ids.forEach(id => {
             const span = document.querySelector(`#${id} span`);
             if (span) {
-              const texto = span.innerText.replace(".").replace(",");
-              const valor = parseFloat(texto);
+              const preco = span.innerText.replace(/\./g, "").replace(",", ".");
+              const valor = parseFloat(preco);
               if (!isNaN(valor)) total += valor;
             }
           });
       
           document.getElementById("precoTotal").innerHTML = `<h3>Total: R$ ${total.toFixed(2).replace(".", ",")}</h3>`;
         }
-    
+      
         ids.forEach(id => {
           const el = document.getElementById(id);
-          new MutationObserver(calcularTotal).observe(el, { childList: true, subtree: true });
+          if (el) {
+            new MutationObserver(calcularTotal).observe(el, { childList: true, subtree: true });
+          }
         });
       </script>
+      
     </main>
   </body>
 </html>
