@@ -721,3 +721,39 @@ footer {
       align-items: center;
   }
 }
+
+.novidades{
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.novidades:hover {
+  transform: translateY(-5px);
+}
+
+.novidadesTexto{
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.novidadesTexto h2{
+  color: #004080;
+}
+
+.novidadesTexto:hover {
+  transform: translateY(-5px);
+}
