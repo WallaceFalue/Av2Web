@@ -39,6 +39,13 @@ include("conection.php");
             </div>
         <img src="../imagens/Propaganda login.png" alt="" class="imagemLogin">
     </div>
+    <footer>
+      <h3>Contato:</h3>
+      <p>E-mail: MegaByte@gmail.com</p>
+      <p>Telefone: (21) 98556-2858</p>
+      <p>(21) 98556-2858</p>
+      <p>(21) 98556-2858</p>
+    </footer>
 </body>
 
 </html>
