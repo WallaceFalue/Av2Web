@@ -1,0 +1,62 @@
+
+@media (max-width: 1024px) { 
+.caixaContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    width: calc(45% - 20px); 
+    margin: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+}
+
+@media (max-width: 768px) {  
+.caixaContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
+}
+
+@media (max-width: 480px) {  
+.tituloPromocoes {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.produto {
+    width: 100%; 
+    margin: 10px 0;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+}

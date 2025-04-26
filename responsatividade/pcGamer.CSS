@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
+  .produto {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .produtos {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .produto {
+      margin-bottom: 20px;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .PCtexto {
+      width: 100%; 
+      height: 100%;
+      font-size: 0.6em; 
+      padding: 1em;
+    }
+  
+    .PCpecaImagem {
+      width: 100%; 
+      text-align: center;
+      gap: 0em;
+    }
+  
+    .PCpecaImagem img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .PCpecaImagem p {
+      font-size: 0.7em; 
+      line-height: 20; 
+      text-align: justify;
+    }
+  }

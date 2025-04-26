@@ -522,125 +522,20 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  nav h1 {
-    font-size: 2em;
-  }
-
-  nav .menu {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .baner img {
-    width: 100%;
-    height: auto;
-  }
-
-  .caixaContainer {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .produto {
-    width: 100%;
-  }
-
-  .PCcontainer img {
-    width: 100%;
-    height: auto;
-  }
-
-  .PCtexto {
-    width: 100%;
-    height: auto;
-  }
-
-  .monteSuePCpecas {
-    width: 100%;
-    height: auto;
-  }
-
-  .monteSeuPCCompleto {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .caixaLoginContainer {
-    margin-top: 10em;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  #form {
-    margin-right: 0;
-    max-width: 100%;
-  }
-
-  .imagemLogin {
-    max-width: 100%;
-  }
+.perifericos {
+  display: flex;
+  background-color: #444;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  color: white;
+  padding: 1em;
+  border-radius: 0.1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
 }
 
-@media (max-width: 480px) {
-  nav h1 {
-    font-size: 1.5em;
-  }
-
-  .tituloPromocoes {
-    font-size: 2em;
-    padding: 0.5em;
-  }
-
-  .sobreNos {
-    font-size: 2em;
-  }
-
-  .textosobre h1 {
-    font-size: 1.5em;
-  }
-
-  .caixaLoginContainer {
-    margin-top: 12em;
-  }
-  .textosobre p {
-    font-size: 1em;
-  }
-
-  .caixasobre {
-    width: 100%;
-  }
-
-  .monteSuePCpecas h3 {
-    font-size: 1em;
-  }
-
-  .monteSuePCpecas span {
-    font-size: 0.9em;
-  }
-
-  .monteSeuPCCompleto h3 {
-    font-size: 1em;
-  }
-
-  .monteSeuPCCompleto span {
-    font-size: 0.9em;
-  }
-
-  .perifericos {
-    display: flex;
-    background-color: #444;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 3em;
-    color: white;
-    padding: 1em;
-    border-radius: 0.1em;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-  }}
-
-  .objetivos {
+.objetivos {
     background-color: #f0f4f8;
     padding: 60px 20px;
     text-align: center;
@@ -726,7 +621,6 @@ footer {
   }
 }
 
-
 .novidades{
   background-color: #333;
   color: white;
@@ -795,4 +689,43 @@ footer {
 
 .PCGamerNovidades:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  nav .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1em; 
+    justify-items: center; 
+    padding: 1em;
+  }
+
+  nav a {
+    font-size: 1em; 
+    padding: 0.5em 0.8em; 
+  }
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8em;
+  }
+
+  nav a {
+    font-size: 0.9em; 
+    padding: 0.4em 0.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .menu {
+    grid-template-columns: 1fr; 
+    gap: 0.5em;
+  }
+
+  nav a {
+    font-size: 0.8em; 
+    padding: 0.3em 0.5em;
+  }
 }
