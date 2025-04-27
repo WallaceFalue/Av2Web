@@ -4,29 +4,24 @@
       flex-direction: column;
       align-items: center;
     }
-  
-    nav ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+
+    .monteseuPCimgContainer{
+    max-width: 60%;
     }
-  
+    
     .container-montagem {
       flex-direction: column;
       padding: 30px;
     }
   
-    .opcao {
-      width: 80%;
-      margin: 10px auto;
+    .monteseuPCimgContainer {
+      flex-direction: column;
     }
-  
-    .btn-montar {
+
+    .monteSuePCpecas {
       width: 80%;
-      font-size: 18px;
     }
-  
+     
     footer {
       flex-direction: column;
       text-align: center;
@@ -39,27 +34,21 @@
       flex-direction: column;
       align-items: center;
     }
-  
-    nav ul {
+    
+    .monteseuPCimgContainer {
       flex-direction: column;
-      gap: 10px;
     }
-  
+
+    .monteSuePCpecas {
+      width: 80%;
+    }
+
     .container-montagem {
       flex-direction: column;
-      padding: 20px;
+      padding: 15px;
     }
   
-    .opcao {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-  
-    .btn-montar {
-      width: 100%;
-      font-size: 18px;
-    }
-  
+    
     footer {
       flex-direction: column;
       text-align: center;

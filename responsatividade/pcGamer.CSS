@@ -1,77 +1,67 @@
 @media (max-width: 1024px) {
-  header {
-    padding: 10px 20px;
-    flex-direction: column;
-    align-items: center;
+  .PCatencao {
+    width: 80%;
+    margin: 0;
   }
 
-  nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+  .PCtexto img {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .PCtexto p {
+    font-size: 0.6em;
   }
 
-  .banner img {
-    width: 100%;
-    height: auto;
+  .PCtexto span {
+    font-size: 0.8em;
   }
 
-  .produtos {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-  }
-
-  .produto {
-    margin-bottom: 20px;
-  }
-
-  footer {
+   footer {
     flex-direction: column;
     text-align: center;
     padding: 20px;
   }
 }
 
-  
   @media (max-width: 768px) {
-    header {
+    .espacador {
+      margin-top: 13em;
+    }
+
+    .PCatencao {
       flex-direction: column;
       align-items: center;
     }
   
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
+    .PCtexto img {
+      width: 0em;
+      height: 0em;
     }
-  
-    .banner img {
-      width: 100%;
-      height: auto;
+    
+    .PCtexto p {
+      font-size: 0.6em;
     }
-  
-    .produtos {
-      grid-template-columns: 1fr;
-      padding: 10px;
+
+    .PCtexto span {
+      font-size: 0.8em;
     }
-  
-    .produto {
-      margin-bottom: 20px;
-    }
-  
-    footer {
-      flex-direction: column;
-      text-align: center;
-    }
+
   }
   
-  
   @media (max-width: 480px) {
+    .espacador {
+      margin-top: 24em;
+    }
+
+    .PCatencao {
+      width: 80%;
+      margin: 0;
+    }
+
     .PCtexto {
-      width: 100%; 
-      height: 100%;
-      font-size: 0.6em; 
-      padding: 1em;
+      width: 80%;
+      margin: 0;
     }
   
     .PCpecaImagem {
