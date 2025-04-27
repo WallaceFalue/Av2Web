@@ -32,45 +32,70 @@
   <main class="caixaLoginContainer">
     <div id="form">
       <h1>Seja bem vindo!</h1><br>
-      <h2>Caso tenha alguma duvida ou reclamação, nos mande um email</h2>
+      <h2>Caso tenha alguma dúvida ou reclamação, nos mande um email</h2>
+  
       <form name="form" id="emailForm" class="caixaLogin">
         <label>Email</label>
-        <input placeholder="Digite seu email" id="emailInput"><br><br>
+        <input name="email" placeholder="Digite seu email" id="emailInput" required><br><br>
+  
         <label>Nome</label>
-        <input placeholder="Digite seu nome"><br><br>
-        <label>Motivo da duvida ou reclamação</label>
-        <input placeholder="Digite aqui"><br><br>
-        <label>mensagem</label>
-        <textarea placeholder="Digite sua mensagem" id="pass" name="pass"></textarea>
-        <input type="submit" id="btn">
+        <input type="text" name="nome" placeholder="Digite seu nome" id="nomeInput" required><br><br>
+  
+        <label>Motivo da dúvida ou reclamação</label>
+        <input type="text" name="motivo" placeholder="Digite aqui" id="motivoInput" required><br><br>
+  
+        <label>Mensagem</label>
+        <textarea name="mensagem" placeholder="Digite sua mensagem" id="mensagemInput" required></textarea>
+  
+        <input type="submit" id="btn" value="Enviar">
       </form>
+  
       <p id="resultMessage"></p>
     </div>
-
+  
     <img src="../imagens/ladoVermerlho.jpg" alt="propaganda" class="imagemLogin">
   </main>
-
+  
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
   <script>
-    const emailInput = document.querySelector("#emailInput")
-    const resultMessage = document.querySelector("#resultMessage")
-    const emailForm = document.querySelector("#emailForm")
-
-    emailForm.addEventListener("submit", function (event) {
+    (function() {
+      emailjs.init("ie8Z5_LppZJGD1L_2"); 
+    })();
+  
+    const emailInput = document.querySelector("#emailInput");
+    const nomeInput = document.querySelector("#nomeInput");
+    const motivoInput = document.querySelector("#motivoInput");
+    const mensagemInput = document.querySelector("#mensagemInput");
+    const resultMessage = document.querySelector("#resultMessage");
+    const emailForm = document.querySelector("#emailForm");
+  
+    emailForm.addEventListener("submit", function(event) {
       event.preventDefault();
-
-      const email = emailInput.value
-
+  
+      const email = emailInput.value;
       const isValid = validateEmail(email);
-
+  
       if (isValid) {
-        resultMessage.textContent = "email valido";
+        resultMessage.textContent = "Email válido. Enviando...";
         resultMessage.style.color = "green";
+  
+        emailjs.sendForm('service_pb4lqjn', 'template_77rf903', this)
+          .then(function() {
+            resultMessage.textContent = "Mensagem enviada com sucesso!";
+            resultMessage.style.color = "green";
+            emailForm.reset();
+          }, function(error) {
+            resultMessage.textContent = "Erro ao enviar: " + JSON.stringify(error);
+            resultMessage.style.color = "red";
+          });
+  
       } else {
-        resultMessage.textContent = "email invalido";
+        resultMessage.textContent = "Email inválido.";
         resultMessage.style.color = "red";
       }
     });
-
+  
     const validateEmail = (email) => {
       const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
       return regex.test(email);
