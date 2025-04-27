@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/alien.avif" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css" />
-    <title>Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../imagens/alien.avif" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../responsatividade/contato.css">
+  <title>Contato</title>
 </head>
+
 <body>
-    <nav>
-        <h1>
-          <a href="../index.html"
-            >MegaByte<span class="letraMinuscula">.Shopping</span></a
-          >
-        </h1>
-        <div class="menu">
-          <a href="promocoes.html">Promoções</a>
-          <a href="PC Gamer.html">PC Gamer</a>
-          <a href="upgradeEperifericos.html">Kit Upgrade e periféricos</a>
-          <a href="monteSeuPC.html">Monte seu PC</a>
-          <a href="novidades.html">Novidades</a>
-          <a href="sobreNos.html">Sobre Nós</a>
-          <a href="Contato.html" class="active">Contato</a>
-          <a href="index.php">Login</a>
-        </div>
-      </nav>
+  <nav>
+    <h1>
+      <a href="../index.html">MegaByte<span class="letraMinuscula">.Shopping</span></a>
+    </h1>
+    <div class="menu">
+      <a href="promocoes.html">Promoções</a>
+      <a href="PC Gamer.html">PC Gamer</a>
+      <a href="upgradeEperifericos.html">Kit Upgrade e periféricos</a>
+      <a href="monteSeuPC.html">Monte seu PC</a>
+      <a href="novidades.html">Novidades</a>
+      <a href="sobreNos.html">Sobre Nós</a>
+      <a href="Contato.html" class="active">Contato</a>
+      <a href="index.php">Login</a>
+    </div>
+  </nav>
 
-      <div class="espacador"></div>
-      
-      
-      <div class="caixaLoginContainer">   
-        <div id="form">
-            <h1>Seja bem vindo!</h1><br>
-            <h2>Caso tenha alguma duvida ou reclamação, nos mande um email</h2>
-            <form name="form" id="emailForm" class="caixaLogin">
-                <label>Email</label>
-                <input  placeholder="Digite seu email" id="emailInput"><br><br>
-                <label>Nome</label>
-                <input  placeholder="Digite seu nome" ><br><br>
-                <label>Motivo da duvida ou reclamação</label>
-                <input  placeholder="Digite aqui"><br><br>
-                <label>mensagem</label>
-                <textarea  placeholder="Digite sua mensagem" id="pass" name="pass"></textarea>
-                <input type="submit" id="btn">
-            </form>
-            <p id="resultMessage"></p>
-        </div>
+  <div class="espacador"></div>
+
+  <main class="caixaLoginContainer">
+    <div id="form">
+      <h1>Seja bem vindo!</h1><br>
+      <h2>Caso tenha alguma duvida ou reclamação, nos mande um email</h2>
+      <form name="form" id="emailForm" class="caixaLogin">
+        <label>Email</label>
+        <input placeholder="Digite seu email" id="emailInput"><br><br>
+        <label>Nome</label>
+        <input placeholder="Digite seu nome"><br><br>
+        <label>Motivo da duvida ou reclamação</label>
+        <input placeholder="Digite aqui"><br><br>
+        <label>mensagem</label>
+        <textarea placeholder="Digite sua mensagem" id="pass" name="pass"></textarea>
+        <input type="submit" id="btn">
+      </form>
+      <p id="resultMessage"></p>
+    </div>
+
     <img src="../imagens/ladoVermerlho.jpg" alt="propaganda" class="imagemLogin">
+  </main>
 
-      <script>
-        const emailInput = document.querySelector("#emailInput")
-        const resultMessage = document.querySelector("#resultMessage")
-        const emailForm = document.querySelector("#emailForm")
+  <script>
+    const emailInput = document.querySelector("#emailInput")
+    const resultMessage = document.querySelector("#resultMessage")
+    const emailForm = document.querySelector("#emailForm")
 
-        emailForm.addEventListener("submit", function(event){
-          event.preventDefault();
+    emailForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-          const email = emailInput.value
+      const email = emailInput.value
 
-          const isValid = validateEmail(email);
+      const isValid = validateEmail(email);
 
-          if(isValid) {
-            resultMessage.textContent = "email valido";
-            resultMessage.style.color = "green";
-          } else{
-            resultMessage.textContent = "email invalido";
-            resultMessage.style.color = "red";
-          }
-        });
-        
-        const validateEmail = (email) => {
-          const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
-          return regex.test(email);
-        }
-      </script>
+      if (isValid) {
+        resultMessage.textContent = "email valido";
+        resultMessage.style.color = "green";
+      } else {
+        resultMessage.textContent = "email invalido";
+        resultMessage.style.color = "red";
+      }
+    });
+
+    const validateEmail = (email) => {
+      const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+      return regex.test(email);
+    }
+  </script>
 </body>
+
 </html>

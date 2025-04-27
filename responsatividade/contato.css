@@ -1,0 +1,7 @@
+@media (max-width: 1024px){
+    .caixaLoginContainer{
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: 20em;
+    }
+}
