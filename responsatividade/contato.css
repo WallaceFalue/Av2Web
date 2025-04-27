@@ -4,4 +4,9 @@
         flex-direction: column;
         margin-top: 20em;
     }
+
+    footer {
+        text-align: center;
+        margin-top: 10em;
+    }
 }
